@@ -3,12 +3,17 @@ body {
   font-family: Georgia, serif;
   font-size: 100%;
   background-color: white;
+  margin: 0;
 }
 html{box-sizing: border-box;}*{box-sizing: inherit;}
 
 /* link styles */
 a:link, a:visited { color: #DC6903; }
 a:focus, a:hover, a:active { color: #F9AB33; }
+a{
+  text-decoration: none; border-bottom: 1px dotted;
+  padding-bottom: .2em;
+}
 
 
 /* header styles */
@@ -18,10 +23,12 @@ header {
   background-size: cover; 
   text-align: center;
   height: 15em;
+  margin-top: 1.5em;
 }
 header p {
   font-style: italic;
   font-size: 1.2em;
+  margin-top:-12px;
 }
 
 /* nav styles */
@@ -31,6 +38,7 @@ nav, footer {
 }
 nav ul li a:link, nav ul li a:visited {
   color: #F9AB33;
+  margin: 0;
 }
 nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
   color: #fff;
@@ -47,12 +55,17 @@ main {
   background-color: white;
   line-height: 1.8em;
   color: #555;
-  padding: 1em;
+  padding: 1em; border: double 4px #EADDC4;
+  border-radius: 25px;
+  margin: 2.5%;
+
 }
 h3 {
   text-transform: uppercase;
   letter-spacing: .2em;
   color: #7A0002;
+  border-top: 1px solid; border-left: 3px solid; padding-left: 1em;
+  margin-top: 2.5em;
 }
 p.more {
   font-family: verdana, sans-serif;
@@ -65,6 +78,8 @@ aside {
   background: url(images/scallop.png) repeat-y left top;
   background-color: #F6F3ED;
   padding: 1em; padding-left: 45px;
+  border-top-right-radius: 25px;
+  margin-top: 1em; margin-right: 2.5%; margin-bottom: 0; margin-left: 10%;
 }
 /* misc styles */
 footer {
