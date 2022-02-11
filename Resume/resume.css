@@ -8,20 +8,15 @@ body{
 }
 header{
     background-color: #7e8772;
+    color: white;
     background-size: cover;
     height: 0%;
     margin: -1em -5em 0em -5em;
     padding: 2em 2em 2em 2em;
 
 }
-header th{
-    color:whitesmoke;
-    font-style: italic;
-    font-size: 1.2em;
-    text-align: center;
-}
 main{
-    /*background-image: url(images/stockphoto.jpg);*/
+    background-image: url(images/stockphoto.jpg);
     background-color:white;
     margin: 0em -5em 0em -5em;
     padding: 7em 2em 10em 2em;
