@@ -1,13 +1,13 @@
 @charset "UTF-8";
 body{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 100%;
     background-color: whitesmoke;
     margin-left: 5%;
     margin-right: 5%
 }
 header{
-    background-color: rgb(71, 128, 78);
+    background-color: #7e8772;
     background-size: cover;
     height: 0%;
     margin: -1em -5em 0em -5em;
@@ -21,17 +21,18 @@ header th{
     text-align: center;
 }
 main{
-    /*background-image: url(images/emile-perron-xrVDYZRGdw4-unsplash.jpg);*/
-    background-color:blue;
+    /*background-image: url(images/stockphoto.jpg);*/
+    background-color:white;
     margin: 0em -5em 0em -5em;
     padding: 7em 2em 10em 2em;
 
 }
-/*img{
-    width: fit-content;
-}*/
+main p{
+    font-size: 3em;
+}
 footer{
-    background-color:burlywood;
+    background-color: #2d2d2d;
+    color: whitesmoke;
     margin: 0em -5em 0em -5em;
     padding: .1em 2em .1em 2em;
 }
