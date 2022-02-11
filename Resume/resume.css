@@ -2,28 +2,36 @@
 body{
     font-family:Arial, Helvetica, sans-serif;
     font-size: 100%;
-    background-color: whitesmoke;
+    background-color: #7e8772;
     margin-left: 5%;
     margin-right: 5%
 }
 header{
-    background-color: #7e8772;
-    color: white;
-    background-size: cover;
-    height: 0%;
-    margin: -1em -5em 0em -5em;
-    padding: 2em 2em 2em 2em;
+    color: black;
+    background-size: cover; 
+    text-align: center;
+    height: 2.5em;
+    margin-top: 1.5em;
 
 }
+#pagelinks ul li {display: inline;}
+li{
+    margin: 1em 
+}
+a:link, a:visited {color: #000;}
 main{
-    background-image: url(images/stockphoto.jpg);
+    background: url(images/stockphoto.jpg)no-repeat center center;
     background-color:white;
+    background-size: cover;
+    width: 87em;
+    height: 27em;
     margin: 0em -5em 0em -5em;
     padding: 7em 2em 10em 2em;
 
 }
 main p{
     font-size: 3em;
+    color:whitesmoke;
 }
 footer{
     background-color: #2d2d2d;
