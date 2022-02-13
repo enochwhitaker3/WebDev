@@ -20,7 +20,7 @@ li{
     margin: 1em 
 }
 a:link, a:visited {color: #000;}
-
+img {margin: -.8em; float:inline-start;}
 
 main{
     background-color:white;

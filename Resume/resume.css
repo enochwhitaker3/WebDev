@@ -22,6 +22,7 @@ li{
 a:link, a:visited {color: #000;}
 
 
+
 main{
     background: url(images/stockphoto.jpg)no-repeat center center;
     background-color:white;
@@ -35,6 +36,9 @@ main{
 
 
 main p{
+    padding:0;
+    margin: 0;
+    position: relative; bottom: -175px;
     font-size: 3em;
     font-weight: bolder;
     color:whitesmoke;
