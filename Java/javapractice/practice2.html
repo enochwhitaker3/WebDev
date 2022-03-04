@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PGW</title>
+</head>
+<body>
+    <div>blue</div>
+    <div>forestgreen</div>
+    <div>red</div>
+    <script>
+        const divs = document.querySelectorAll("div");
+        divs.forEach((el)=>{
+            el.addEventListener("click",()=>{
+                document.body.style.backgroundColor = el.textContent;
+            });
+        })
+
+        document.querySelector('body').addEventListener('click', (e)=> {
+         let node = e.target
+         hidden.push(node);
+         node.style.visibility = 'hidden';
+
+       });
+
+
+
+
+        
+        /*let darkMode = false;
+        window.onclick = () => {
+            console.log(darkMode);
+            if (!darkMode) {
+                document.body.style.backgroundColor = "black";
+                document.body.style.color = "white";
+                darkMode = true;
+            } else {
+                document.body.style.backgroundColor = "white";
+                document.body.style.color = "black";
+                darkMode = false;
+            }
+        }*/
+    </script>
+</body>
+</html>

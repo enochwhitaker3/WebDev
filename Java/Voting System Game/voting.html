@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Complete JavaScript Course</title>
+</head>
+
+<body>
+    <div id="message">Complete JavaScript Course</div>
+    <div>
+        <input type="text" id="addFriend">
+        <input type="button" id="addNew" value="Add Friend">
+
+    </div>
+    <table id="output">
+
+    </table>
+    <script>
+        const array = [];
+        let userInput = document.getElementById('addFriend');
+        let button = document.getElementById('addNew');
+        let output = document.getElementById('output');
+        button.addEventListener("click", function () {
+            const newFriend = userInput.value;
+            array.push(newFriend);
+            console.log(newFriend);
+            const theTable = document.getElementById('output');
+
+            function newTableRow(newFriend, rowNumber, voteNumber) {
+                rowNumber = 0;
+                array.forEach(newFriend => rowNumber = rowNumber + 1); {
+                };
+                const newTableRow = document.createElement('tr');
+                voteNumber = 0;
+                newTableRow.onclick = function () {
+                    console.log(newTableRow.lastChild);
+                    voteNumber = Number(newTableRow.lastChild.textContent);
+                    voteNumber = voteNumber + 1;
+                    newTableRow.lastChild.textContent = voteNumber;
+                }
+                newTableRow.innerHTML = `<td>${rowNumber}</td><td>${newFriend}</td><td>${voteNumber}</td>`;
+                return newTableRow;
+            }
+            theTable.appendChild(newTableRow(newFriend));
+        });
+    </script>
+</body>
+
+</html>

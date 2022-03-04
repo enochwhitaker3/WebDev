@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <h1>Testing:...</h1>
+    <table id="epicTable">
+    </table>
+    <script>
+        const ooga = document.getElementById('epicTable');
+        for(let i = 0; i < 5; i++)
+        {
+            const newListItem = document.createElement('li');  
+            ooga.appendChild(newListItem);
+            newListItem.innerHTML = `${i}`
+        }
+        window.addEventListener("load", function (loadStuff){
+            alert("stuff has offically loaded");
+        });
+    </script>
+    
+</body>
+<footer>
+    <p>This is the footer. Please <a href="contact.html">contact</a> us with your answers</p>
+</footer>
+</html>
