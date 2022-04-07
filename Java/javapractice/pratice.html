@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+    <script>
+        /*let dog = { Name: "River", 
+            weight: 2.4, 
+            color: "golden-brown", 
+            breed: "Golden Doodle"
+          };
+        class Person {
+            constructor(firstname, lastname)
+            {
+                this.firstname = firstname;
+                this.lastname = lastname;
+                this.fullname = firstname + lastname;
+            }
+            greet() {
+                console.log(`Hey`, this.fullname);
+            }
+        }
+        let friend = new Person("Tony", " Lopez");
+        let friend2 = new Person("Christian", " Dean" );
+        friend.greet();*/
+        class Fraction {
+            constructor(numerator=0, denominator=1){
+                this.numerator = numerator;
+                this.denominator = denominator;
+            }
+            this(other){
+                return new Fraction(this.numerator*other.numerator, this.denominator*other.denominator);
+            }
+        }
+        let f1 = new Fraction(2,3);
+        let f2 = new Fraction(5,7);
+        let product = f1.times(f2);
+        console.assert(product.numerator);
+    </script>
+</body>
+</html>

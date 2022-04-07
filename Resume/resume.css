@@ -24,14 +24,13 @@ a:link, a:visited {color: #000;}
 
 
 main{
-    background: url(images/stockphoto.jpg)no-repeat center center;
+    background: url(images/stockphoto.jpg); no-repeat: center center;
     background-color:white;
     background-size: cover;
     width: 87em;
     height: 27em;
     margin: 0em -5em 0em -5em;
     padding: 7em 2em 10em 2em;
-
 }
 
 
@@ -48,4 +47,28 @@ footer{
     color: whitesmoke;
     margin: 0em -5em 0em -5em;
     padding: .1em 2em .1em 2em;
+}
+@media (min-width: 400px) {
+    img{
+        width: 100%
+    }
+    footer{
+        height: 10px;
+    }
+}
+@media (min-width: 650px) {
+    img{
+        width: 80%
+    }
+    body{
+        font-stretch: ultra-expanded;
+    }
+}
+@media (min-width: 1000px) {
+    img{
+        width: 60%
+    }
+    body {
+        background-color: blue;
+    }
 }
