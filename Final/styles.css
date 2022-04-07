@@ -1,0 +1,41 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "leftside article rightside"
+        "footer footer footer";
+    grid-template-rows: 80px 1fr 60px;
+    grid-template-columns: 10% 1fr 10%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+}
+
+header, footer, article, div, div {
+    padding: 1.2em;
+    background: whitesmoke;
+    text-align: center;
+}
+body{
+    background-color: black;
+}
+#pageHeader {
+    grid-area: header;
+}
+
+#pageFooter {
+    grid-area: footer;
+}
+
+#mainArticle {
+    grid-area: article;
+}
+
+#leftside {
+    grid-area: leftside;
+}
+
+#rightside {
+    grid-area: rightside;
+}
