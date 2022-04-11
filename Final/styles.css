@@ -2,24 +2,46 @@ body {
     display: grid;
     grid-template-areas:
         "header header header"
-        "leftside article rightside"
+        "article article article"
         "footer footer footer";
-    grid-template-rows: 80px 1fr 60px;
+    grid-template-rows: 60px 1fr 60px;
     grid-template-columns: 10% 1fr 10%;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
     height: 100vh;
-    margin: 0;
+    margin: 0%;
+    justify-content: center;
+    align-items: center;
 }
 
-header, footer, article, div, div {
-    padding: 1.2em;
-    background: whitesmoke;
-    text-align: center;
+nav {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-body{
+
+img {
+    height: 60px;
+    width: 150px;
+    z-index: 1;
+}
+
+
+header,
+footer,
+article,
+div,
+div {
+    background: whitesmoke;
+}
+
+body {
     background-color: black;
 }
+
 #pageHeader {
     grid-area: header;
 }
@@ -30,12 +52,4 @@ body{
 
 #mainArticle {
     grid-area: article;
-}
-
-#leftside {
-    grid-area: leftside;
-}
-
-#rightside {
-    grid-area: rightside;
 }
