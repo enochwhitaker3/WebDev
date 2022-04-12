@@ -1,3 +1,4 @@
+
 body {
     display: grid;
     grid-template-areas:
@@ -10,6 +11,8 @@ body {
     margin: 0%;
     justify-content: center;
     align-items: center;
+    background: black;
+    margin: 0%;
 }
 
 nav {
@@ -19,27 +22,28 @@ nav {
     align-items: center;
     position: fixed;
     top: 0;
-    width: 100%; 
+    width: 100%;
+    z-index: 2;
+    size: fixed;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 img {
     height: 60px;
     width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     z-index: 1;
 }
 
-
-header,
-footer,
-article,
-div,
-div {
-    background: whitesmoke;
+video {
+    margin: 0%;
+    display: flex;
 }
 
-body {
-    background-color: black;
+footer {
+    background-color: whitesmoke;
+    height: 60px;
 }
 
 #pageHeader {
@@ -52,4 +56,30 @@ body {
 
 #mainArticle {
     grid-area: article;
+}
+
+.container { position:relative; }
+.container video {
+    position:relative;
+    z-index:0;
+}
+.overlay{
+    position:absolute;
+    bottom:0;
+    left:0;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    z-index:1;
+    color: white;
+    font-family: Nova Flat;
+    font-size: 6em;
+}
+#PL1{
+    padding-left: 1.5%;
+    font-size: 0.25em;
+}
+#PL2{
+    background-color: black;
+    border-color: white;
+    margin: 0%;
 }
