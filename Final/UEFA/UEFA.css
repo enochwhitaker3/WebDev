@@ -11,8 +11,9 @@ body {
     margin: 0%;
     justify-content: center;
     align-items: center;
-    background: black;
+    background: white;
     margin: 0%;
+    text-align: center;
 }
 
 nav {
@@ -36,10 +37,6 @@ img {
     z-index: 1;
 }
 
-video {
-    margin: 0%;
-    display: flex;
-}
 
 footer {
     background-color: whitesmoke;
@@ -69,30 +66,4 @@ footer {
 
 #mainArticle {
     grid-area: article;
-}
-
-.container { position:relative; }
-.container video {
-    position:relative;
-    z-index:0;
-}
-.overlay{
-    position:absolute;
-    bottom:0;
-    left:0;
-    padding-bottom: 2%;
-    padding-left: 2%;
-    z-index:1;
-    color: white;
-    font-family: Nova Flat;
-    font-size: 6em;
-}
-#PL1{
-    padding-left: 1.5%;
-    font-size: 0.25em;
-}
-#PL2{
-    background-color: black;
-    border-color: white;
-    margin: 0%;
 }
