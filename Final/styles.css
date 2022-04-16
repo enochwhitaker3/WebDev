@@ -45,6 +45,8 @@ footer {
     background-color: whitesmoke;
     height: 60px;
 }
+
+
 #leaguespage:hover, #scorespage:hover, #transferspage:hover, #uefapage:hover, #europapage:hover{
     background-color: black;
     color: whitesmoke
@@ -67,9 +69,10 @@ footer {
     grid-area: footer;
 }
 
-#mainArticle {
+.mainArticle {
     grid-area: article;
 }
+
 
 .container { position:relative; }
 .container video {

@@ -11,21 +11,41 @@
 
 <body>
   <script>
-    window.onload = function() {document.body.scrollTop = document.documentElement.scrollTop = 0;};
+    const axios = require("axios");
+
+    const options = {
+      method: 'GET',
+      url: 'https://api-football-v1.p.rapidapi.com/v3/standings',
+      params: { season: '2021', league: '39' },
+      headers: {
+        'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com',
+        'X-RapidAPI-Key': '4742e19eebmshc357576221ff8e5p1462fejsn3ae098bdcc65'
+      }
+    };
+
+    axios.request(options).then(function (response) {
+      console.log(response.data);
+    }).catch(function (error) {
+      console.error(error);
+    });
   </script>
 
 
   <header id="pageHeader">
     <nav>
-      <a href="../final.html" ><img src="../source/goaltenderfinal.jpg" alt="logo" ></a>
+      <a href="../final.html"><img src="../source/goaltenderfinal.jpg" alt="logo"></a>
       <a id="leaguespage" link href="../League Tables/leaguetables.html">League Tables</a>
-      <a id="scorespage"  link href="../Live Scores/Livescores.html">Live Scores</a>
+      <a id="scorespage" link href="../Live Scores/Livescores.html">Live Scores</a>
       <a id="transferspage" link href="../Transfer News/Transfernews.html">Transfer News</a>
       <a id="uefapage" link href="../UEFA/UEFA.html">UEFA Champions League</a>
       <a id="europapage" link href="../Europa/Europa.html">Europa League</a>
     </nav>
   </header>
-  <article id="mainArticle">Insert Body Here</article>
+  
+
+
+
+  <article id="mainArticle"><button onclick="axios()">Try It</button></article>
   <footer id="pageFooter">Footer</footer>
 
 
