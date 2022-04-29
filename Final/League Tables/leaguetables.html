@@ -10,25 +10,7 @@
 <!doctype html>
 
 <body>
-  <script>
-    const axios = require("axios");
-
-    const options = {
-      method: 'GET',
-      url: 'https://api-football-v1.p.rapidapi.com/v3/standings',
-      params: { season: '2021', league: '39' },
-      headers: {
-        'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com',
-        'X-RapidAPI-Key': '4742e19eebmshc357576221ff8e5p1462fejsn3ae098bdcc65'
-      }
-    };
-
-    axios.request(options).then(function (response) {
-      console.log(response.data);
-    }).catch(function (error) {
-      console.error(error);
-    });
-  </script>
+    
 
 
   <header id="pageHeader">
@@ -42,10 +24,20 @@
     </nav>
   </header>
   
+<div id="wg-api-football-standings"
+     data-host="v3.football.api-sports.io"
+     data-league="39"
+     data-team=""
+     data-season="2021"
+     data-key="e0874e76543602da33b4f7709a448b04"
+     data-theme="false"
+     data-show-errors="false"
+     class="api_football_loader"></div>
+<script
+    type="module"
+    src="https://widgets.api-sports.io/football/1.1.8/widget.js">
+</script>
 
-
-
-  <article id="mainArticle"><button onclick="axios()">Try It</button></article>
   <footer id="pageFooter">Footer</footer>
 
 
